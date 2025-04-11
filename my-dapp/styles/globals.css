@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* Default (light mode) styles */
+body {
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Example card styles */
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #ccc;
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  outline: none;
+}
+
+/* Input focus style */
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+button {
+  background-color: #007bff;
+  /* 蓝色背景 */
+  color: white;
+  /* 白色文字 */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  /* 深蓝色悬停效果 */
+}
+
+.list-item.selected {
+  background-color: #007bff;
+  /* Blue background */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Other classes: .header, .section-title, etc. */
+/* ... */
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    /* darker background */
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .header {
+    background: #333333;
+    color: #ffffff;
+  }
+
+  .section-title {
+    color: #bb86fc;
+    /* a color that stands out in dark mode */
+  }
+
+  input,
+  textarea,
+  select {
+    border: 1px solid #555;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: 0 0 5px rgba(100, 149, 237, 0.5);
+    border-color: #6495ed;
+  }
+
+  /* Update any other specific elements as needed */
+}
