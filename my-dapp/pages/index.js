@@ -11,8 +11,8 @@ export default function Home() {
 
   // const factoryAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
   // const routerAddress = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707";
-  const factoryAddress = "0xDC1b83Fd071B0edbdF76d1b493535Ba8A60DB026";
-  const routerAddress = "0x4E2519384020328cF8ca9FA8Cc858aF5927b3958";
+  const factoryAddress = "0x2263eFE69285AA0C1eA487bC69EB2BA4225B9c31";
+  const routerAddress = "0x082bE369B2d1E8D0Cbd2Ad90A94d4a458836aDDF";
 
   return (
     <div>
