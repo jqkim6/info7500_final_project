@@ -1,5 +1,5 @@
 import { Line } from "react-chartjs-2";
-import { Chart, LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend } from "chart.js";
+import { Chart, LineElement, CategoryScale, LinearScale, ScatterController, PointElement, Tooltip, Legend } from "chart.js";
 import { useEffect, useState } from "react";
 
 // Register Chart.js components
