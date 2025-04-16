@@ -9,6 +9,7 @@ export default function ReserveCurveChart({ reserve0, reserve1 }) {
     // Compute constant k = reserve0 * reserve1
     const k = reserve0 * reserve1;
     const [chartData, setChartData] = useState(null);
+    
 
     useEffect(() => {
         if (!reserve0 || !reserve1) return;
