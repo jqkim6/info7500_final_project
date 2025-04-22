@@ -12,10 +12,10 @@ export default async function handler(req, res) {
     }
 
     // 构建对话上下文
-    const tokenCtx = `Available tokens: TKA=${process.env.NEXT_PUBLIC_TKA_ADDRESS}, ` +
-        `TKB=${process.env.NEXT_PUBLIC_TKB_ADDRESS}, ` +
-        `TKC=${process.env.NEXT_PUBLIC_TKC_ADDRESS}, ` +
-        `WETH=${process.env.NEXT_PUBLIC_WETH_ADDRESS}`;
+    const tokenCtx = `Available tokens: TKA=0x10B8a36DfcD3bbaB4469c11978739dddE80cA05c, ` +
+        `TKB=0x5346C8D25956A8f1421474dd2e6DC9c0C94Bf544, ` +
+        `TKC=0x1fc82fAAAF0E4E5D7648A67f9FbfDe4A6805Fe80, ` +
+        `WETH=0xa88C678a30666e31c425f8E3E674574d208CcF49`;
 
     const systemPrompt = `
 You are a Uniswap assistant. ${tokenCtx}.
